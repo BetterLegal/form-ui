@@ -145,6 +145,12 @@ section > header {
   line-height: 1.5;
 }
 
+.org-info-shares {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
 .address {
   display: grid;
   grid-auto-columns: 1fr;
@@ -207,13 +213,18 @@ section > header {
   grid-area: invested;
 }
 
+.person-shares {
+  grid-area: shares;
+}
+
 /* AFFILIATES */
 
 .aff {
   padding: 10px;
 }
 
-.aff-manager {
+.aff-manager,
+.aff-director {
   display: grid;
   grid-auto-columns: 1fr;
   gap: 2px;
@@ -233,6 +244,16 @@ section > header {
     "phone phone phone phone city city state zipcode";
 }
 
+.aff-shareholder {
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 2px;
+  grid-template-areas:
+    "name name name name shares shares . ."
+    "email email email email address1 address1 address1 address1"
+    "phone phone phone phone city city state zipcode";
+}
+
 @media screen and (max-width: 600px) {
   body {
     padding: 10px;
@@ -247,7 +268,8 @@ section > header {
     margin-bottom: 20px;
   }
 
-  .aff-manager {
+  .aff-manager,
+  .aff-director {
     grid-template-areas:
       "name name name name"
       "email email phone phone"
@@ -259,6 +281,15 @@ section > header {
     grid-template-areas:
       "name name name name"
       "stake stake invested invested"
+      "email email phone phone"
+      "address1 address1 address1 address1"
+      "city city state zipcode";
+  }
+
+  .aff-shareholder {
+    grid-template-areas:
+      "name name name name"
+      "shares shares shares shares"
       "email email phone phone"
       "address1 address1 address1 address1"
       "city city state zipcode";
@@ -290,7 +321,8 @@ section > header {
 }
 
 @media screen and (max-width: 400px) {
-  .aff-manager {
+  .aff-manager,
+  .aff-director {
     grid-template-areas:
       "name name name name"
       "email email email email"
@@ -303,6 +335,16 @@ section > header {
     grid-template-areas:
       "name name name name"
       "stake stake invested invested"
+      "email email email email"
+      "phone phone phone phone"
+      "address1 address1 address1 address1"
+      "city city state zipcode";
+  }
+
+  .aff-shareholder {
+    grid-template-areas:
+      "name name name name"
+      "shares shares shares shares"
       "email email email email"
       "phone phone phone phone"
       "address1 address1 address1 address1"
