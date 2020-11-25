@@ -88,6 +88,9 @@ textarea {
 input:disabled,
 textarea:disabled {
   background-color: #fff;
+  opacity: 1;
+  -webkit-text-fill-color: #333;
+
   color: #333;
 
   cursor: not-allowed;

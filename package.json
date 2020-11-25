@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel serve ./**.html",
-    "build": "parcel build ./index.html"
+    "start": "parcel serve llc.html inc.html",
+    "build": "parcel build llc.html inc.html"
   },
   "keywords": [],
   "author": "",
