@@ -241,7 +241,8 @@ section > header {
   grid-auto-columns: 1fr;
   gap: 2px;
   grid-template-areas:
-    "name name name name address1 address1 address1 address1"
+    "name name name name name name name name"
+    "first-name first-name last-name last-name address1 address1 address1 address1"
     "email email email email city city state zipcode"
     "phone phone phone phone . . . .";
 }
@@ -251,7 +252,8 @@ section > header {
   grid-auto-columns: 1fr;
   gap: 2px;
   grid-template-areas:
-    "name name name name stake stake invested invested"
+    "name name name name name name name name"
+    "first-name first-name last-name last-name stake stake invested invested"
     "email email email email address1 address1 address1 address1"
     "phone phone phone phone city city state zipcode";
 }
@@ -261,7 +263,8 @@ section > header {
   grid-auto-columns: 1fr;
   gap: 2px;
   grid-template-areas:
-    "name name name name shares shares . ."
+    "name name name name name name name name"
+    "first-name first-name last-name last-name shares shares . ."
     "email email email email address1 address1 address1 address1"
     "phone phone phone phone city city state zipcode";
 }
@@ -284,6 +287,7 @@ section > header {
   .aff-director {
     grid-template-areas:
       "name name name name"
+      "first-name first-name last-name last-name"
       "email email phone phone"
       "address1 address1 address1 address1"
       "city city state zipcode";
@@ -292,6 +296,7 @@ section > header {
   .aff-member {
     grid-template-areas:
       "name name name name"
+      "first-name first-name last-name last-name"
       "stake stake invested invested"
       "email email phone phone"
       "address1 address1 address1 address1"
@@ -301,6 +306,7 @@ section > header {
   .aff-shareholder {
     grid-template-areas:
       "name name name name"
+      "first-name first-name last-name last-name"
       "shares shares shares shares"
       "email email phone phone"
       "address1 address1 address1 address1"
@@ -337,6 +343,7 @@ section > header {
   .aff-director {
     grid-template-areas:
       "name name name name"
+      "first-name first-name last-name last-name"
       "email email email email"
       "phone phone phone phone"
       "address1 address1 address1 address1"
@@ -346,6 +353,7 @@ section > header {
   .aff-member {
     grid-template-areas:
       "name name name name"
+      "first-name first-name last-name last-name"
       "stake stake invested invested"
       "email email email email"
       "phone phone phone phone"
@@ -356,6 +364,7 @@ section > header {
   .aff-shareholder {
     grid-template-areas:
       "name name name name"
+      "first-name first-name last-name last-name"
       "shares shares shares shares"
       "email email email email"
       "phone phone phone phone"
